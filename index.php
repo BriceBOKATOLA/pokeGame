@@ -1,5 +1,6 @@
-<!-- test  -->
 <?php
+// <!-- test  -->
+
 // $pokemon = '150';
 
 // $api = curl_init("https://pokeapi.co/api/v2/pokemon/$pokemon");
@@ -28,6 +29,7 @@
 // var_dump($pokemon);
 
 // Recuperation des elements de l'api 
+
 // <!-- recuperé tout le tableau  -->
 $base = "https://pokeapi.co/api/v2/pokemon/";
 for ($id = 1; $id <= 10 ; $id++) { 
