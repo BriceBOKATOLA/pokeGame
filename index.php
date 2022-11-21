@@ -20,8 +20,16 @@ echo '<h2>image</h2>';
 echo'<img src="'.$json->sprites->back_default.'"width="200">';
 // derriere 
 echo'<img src="'.$json->sprites->front_default.'"width="200">';
+// <!-- recuperé tout le tableau  -->
+$base = "https://pokeapi.co/api/v2/pokemon/";
+$id = 1;
+$data = file_get_contents($base,$id.'/');
+$pokemon = json_decode($data);
+var_dump($pokemon);
+
 ?>
 <!-- fin du test  -->
+
 
 
 <?php 
