@@ -22,6 +22,8 @@ class Pokemon {
      */
     protected $health;
 
+    // --- CONCTRUCTEUR ---
+
     /**
      * Constructeur de la classe Pokemon
      * @param string $type
@@ -46,7 +48,7 @@ class Pokemon {
      *
      * @return string
      */
-    protected function getType():string
+    public function getType():string
     {
         return $this->type;
     }
@@ -56,7 +58,7 @@ class Pokemon {
      *
      * @return string
      */
-    protected function getName():string
+    public function getName():string
     {
         return $this->name;
     }
@@ -66,7 +68,7 @@ class Pokemon {
      *
      * @return int
      */
-    protected function getHealth():int
+    public function getHealth():int
     {
         return $this->health;
     }
