@@ -36,6 +36,8 @@ for ($id = 1; $id <= 10 ; $id++) {
     $data = file_get_contents($base.$id.'/');
     $pokemon = json_decode($data);
     echo $pokemon->name."<br>";
+    // types 
+    echo $pokemon->types[0]->type->name."<br>";
 // recuperation de l'image
     echo'<img src="'.$pokemon->sprites->front_default.'"width="200">';
 }
