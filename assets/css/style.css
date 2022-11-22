@@ -1,0 +1,124 @@
+@font-face{
+    font-family:"pokemon-gb";
+    src:url("https://candyfonts.com/wp-data/2018/10/13/9716/Pokemon GB.ttf") format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/13/9716/Pokemon GB.ttf") format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/13/9716/Pokemon GB.ttf") format("truetype");
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: black;
+  background-color: #efefef;
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+  /* Design Header */
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+.site-content{
+    height: 100vh;
+    width: 65%;
+    background-color: #F8F7DE;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo-pokemon{
+    width: 500px;
+    height: 200px;
+}
+
+.container-trainer{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.choise-trainer{
+    width: 60%;
+}
+
+.container-message{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border: 3px solid #34411E;
+    border-radius: 40px 0 40px 0;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-message p {
+    font-family:"pokemon-gb";
+    font-size: 13px;
+    margin: 0;
+}
+
+.form-name-trainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.form-name-trainer label{
+    font-family:"pokemon-gb";
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.form-name-trainer input{
+    background-color: transparent;
+    padding: 8px 15px;
+    border: 2px solid #394126;
+}
+.form-name-trainer input::placeholder{
+    font-family:"pokemon-gb";
+    font-size: 11px;
+    margin: 0;
+}
+
+.btn-trainer-name{
+    font-family:"pokemon-gb";
+    font-size: 12px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 3px solid #394126;
+}
+
+.img-trainer{
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-trainer img{
+    width: 70%;
+    height: 90%;
+}
