@@ -70,11 +70,7 @@
     <script async src="./assets/js/script.js"></script>
 </head>
 <body>
-     
-<div class="container dotted p-4 mt-4">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center mt-3">Pokemon</h2>
+<h2 class="text-center mt-3">Pokemon</h2>
             <!-- select  -->
             <!-------------------------- selection  --------------------->
             <form action="index.php" method="GET">
@@ -116,13 +112,6 @@
                 echo "vous avez selectionné" . ':  '.'<br>'. $_GET['choix'].'<br>'.' '.$_GET['ad'].'<br>'.' '.$_GET['at'];
             }
             ?>
-            <!-- adversaire  -->
-
-            <div id="pokeTable" class="row mt-3 p-3">
-            </div>
-
-
-        </div>
     <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
     <main class="site-content">
         <!---------------------------------------------------------------Header------------------------------------------------------------->
@@ -148,6 +137,13 @@
         </div>
     </main>
     <!---------------------------------------------------------------Fin contenu------------------------------------------------------------->
+    <div class="container dotted p-4 mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div id="pokeTable" class="row mt-3 p-3">
+            </div>
+
+        </div>
 
     
     
