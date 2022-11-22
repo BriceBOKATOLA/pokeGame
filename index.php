@@ -32,6 +32,7 @@
 
 // <!-- recuperé tout le tableau  -->
 $base = "https://pokeapi.co/api/v2/pokemon/";
+echo '<h1>PoKemon</h1>';
 for ($id = 1; $id <= 10 ; $id++) { 
     $data = file_get_contents($base.$id.'/');
     $pokemon = json_decode($data);
@@ -42,7 +43,7 @@ for ($id = 1; $id <= 10 ; $id++) {
     echo'<img src="'.$pokemon->sprites->front_default.'"width="200">';
 }
 
-var_dump($pokemon);
+// var_dump($pokemon);
 
 ?>
 <!-- fin du test  -->
