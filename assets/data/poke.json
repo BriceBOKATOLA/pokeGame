@@ -2,7 +2,7 @@
     "results": [
         {
             "id": 132,
-            "name": "Dito",
+            "name": "Métamorphe",
             "front_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
             "back_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png",
             "type": "normal",

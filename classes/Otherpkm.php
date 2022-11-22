@@ -161,6 +161,11 @@ class Otherpkm extends Pokemon {
         {
             $damage = $damage * 2;
         }
+        // attaque inefficace
+        if(($this->type == "Feu" && ($typeEnnemy == "Feu" || $typeEnnemy == "Insecte" || $typeEnnemy == "Plante")) || ($this->type == "Eau" && ($typeEnnemy == "Feu" || $typeEnnemy == "Eau")) || ($this->type == "Plante" && ($typeEnnemy == "Eau" || $typeEnnemy == "Electrique" || $typeEnnemy == "Plante")) || ($this->type == "Insecte" && $typeEnnemy == "Plante"))
+        {
+            $damage = $damage * 0.5;
+        }
 
         $this->setDamageSuffured($damage);
 
