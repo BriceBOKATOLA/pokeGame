@@ -51,10 +51,10 @@ attack($ally[0], $ennemy[0]);
     <main class="site-content">
         <div class="container-fight">
             <div class="pokemon-bottom pokemon">
-                <img src="./assets/img/salameche.png">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png">
             </div>
             <div class="pokemon-top pokemon">
-                <img src="./assets/img/tortank.png">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png">
             </div>
             <div class="card_pokemon_top">
                 <div class="item-card-top">
