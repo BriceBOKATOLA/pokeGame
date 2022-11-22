@@ -87,53 +87,25 @@
                     <label for="name">Nom du dresseur :</label>
                     <input type="text" for="name" placeholder="Nom du dresseur">
                 </form>
-                <button class="btn-trainer-name">Suivant</button>
+                <a href="./fight.php"><button class="btn-trainer-name">Suivant</button></a>
             </div>
             <figure class="img-trainer">
-                <img src="./img/dresseur.png">
+                <img src="./assets/img/dresseur.png">
             </figure>
 
         </div>
     </main>
     <!---------------------------------------------------------------Fin contenu------------------------------------------------------------->
-    <!-- pokemon  -->
-    <div class="container dotted p-4 mt-4">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center mt-3">Pokemon</h2>
-         <!-------------------------- selection  --------------------->
-         <form action="index.php" method="GET">
-                <select name="choix">
-                    <option value="Dito">Sélectionné votre Pokemon</option>
-                    <option value="Dito">Dito</option>
-                    <option value="Dracaufeu">Dracaufeu</option>
-                    <option value="Tortank">Tortank</option>
-                    <option value="Florizarre">Florizarre</option>
-                    <option value="pikachu">pikachu</option>
-                    <option value="Chenipan">Chenipan</option>
-                </select> <br>
-                <br>
-                <input type="submit" name="Envoyer" value="Valider">
-            </form>
-            <?php
-            if (isset($_GET['Envoyer'])) {
-                echo "vous avez selectionné" . ':  ' . $_GET['choix'];
-            }
-            ?>
-        <div id="pokeTable" class="row mt-3 p-3">
 
-        </div>
-    </div>
-
+    
     
     <!---------------------------------------------------------------Footer------------------------------------------------------------->
     <footer class="content-footer">
-    <script src="./assets/script.js"></script>
+
     </footer>
     
 </body>
 </html>
-
 
 
 

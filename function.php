@@ -11,6 +11,9 @@ function attack($currentAlly, $currentEnnemy) {
             // pkm 2 attaque
             $currentAlly->attacked($currentEnnemy->attack(), $currentEnnemy->getType());
 
+            if($currentAlly->getDamageSuffured() == 0)
+            echo 'Le pokémon à raté son attaque';
+
             echo '<p>Dégâts de '. $currentEnnemy->getName() . ' : ' . $currentAlly->getDamageSuffured() . '</p>';
             echo '<p>Vie de '. $currentEnnemy->getName() . ' : ' . $currentEnnemy->getHealth() . '</p>';
 
@@ -20,6 +23,9 @@ function attack($currentAlly, $currentEnnemy) {
                 echo '<p><b>Tour : ' . $tour . '</b></p>';
                 // pkm 1 attaque
                 $currentEnnemy->attacked($currentAlly->attack(), $currentAlly->getType());
+
+                if($currentEnnemy->getDamageSuffured() == 0)
+                echo 'Le pokémon à raté son attaque';
 
                 echo '<p>Dégâts de '. $currentAlly->getName() . ' : ' . $currentEnnemy->getDamageSuffured() . '</p>';
                 echo '<p>Vie de '. $currentAlly->getName() . ' : ' . $currentAlly->getHealth() . '</p>';

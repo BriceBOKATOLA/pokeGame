@@ -183,24 +183,32 @@ class Otherpkm extends Pokemon {
      */
     public function attacked(int $damage, string $typeEnnemy):self
     {
-        // attaque efficace
-        if(($this->type == "Plante" && ($typeEnnemy == "Feu" || $typeEnnemy == "Insecte")) || ($this->type == "Eau" && ($typeEnnemy == "Plante" || $typeEnnemy == "Electrique")) || ($this->type == "Feu" && $typeEnnemy == "Eau") || ($this->type == "Insecte" && $typeEnnemy == "Feu"))
-        {
-            $damage = $damage * 2;
-        }
-        // attaque inefficace
-        if(($this->type == "Feu" && ($typeEnnemy == "Feu" || $typeEnnemy == "Insecte" || $typeEnnemy == "Plante")) || ($this->type == "Eau" && ($typeEnnemy == "Feu" || $typeEnnemy == "Eau")) || ($this->type == "Plante" && ($typeEnnemy == "Eau" || $typeEnnemy == "Electrique" || $typeEnnemy == "Plante")) || ($this->type == "Insecte" && $typeEnnemy == "Plante"))
-        {
-            $damage = $damage * 0.5;
-        }
+        // On génère un nombre entre 1 et 4 pour avoir une chance sur quatre de raté son attaque
+        $attackChance = rand(1, 4);
+        if($attackChance >= 2){
+            // attaque efficace
+            if(($this->type == "Plante" && ($typeEnnemy == "Feu" || $typeEnnemy == "Insecte")) || ($this->type == "Eau" && ($typeEnnemy == "Plante" || $typeEnnemy == "Electrique")) || ($this->type == "Feu" && $typeEnnemy == "Eau") || ($this->type == "Insecte" && $typeEnnemy == "Feu"))
+            {
+                $damage = $damage * 2;
+            }
+            // attaque inefficace
+            if(($this->type == "Feu" && ($typeEnnemy == "Feu" || $typeEnnemy == "Insecte" || $typeEnnemy == "Plante")) || ($this->type == "Eau" && ($typeEnnemy == "Feu" || $typeEnnemy == "Eau")) || ($this->type == "Plante" && ($typeEnnemy == "Eau" || $typeEnnemy == "Electrique" || $typeEnnemy == "Plante")) || ($this->type == "Insecte" && $typeEnnemy == "Plante"))
+            {
+                $damage = $damage * 0.5;
+            }
 
-        $this->setDamageSuffured($damage);
+            $this->setDamageSuffured($damage);
 
-        $this->setHealth($this->getHealth() - $this->getDamageSuffured());
+            $this->setHealth($this->getHealth() - $this->getDamageSuffured());
+            
+            if ($this->getHealth() < 0){
+                $this->setHealth(0);
+            }
+        }
+        else {
+            $this->setDamageSuffured(0);
+        }
         
-        if ($this->getHealth() < 0){
-            $this->setHealth(0);
-        }
 
         return $this;
     }
