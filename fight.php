@@ -4,24 +4,18 @@ require_once './classes/Pokemon.php';
 require_once './classes/Otherpkm.php';
 require_once './function.php';
 
-$pkmPlayer = ['Dracaufeu', 'Tortank', 'Zoroark'];
-$pkmComputer = ['Florizarre', 'Rayquaza', 'Pikachu'];
-
-
-$pkmOne = new Otherpkm("Plante", "Bulbizard", 350);
-$pkmTwo = new Otherpkm("Feu", "Salamèche", 350);
+$pkmPlayer = ['Dracaufeu', 'Tortank', 'Chenipan'];
+$pkmComputer = ['Florizarre', 'Métamorphe', 'Pikachu'];
 
 
 
+$pkmAlly = new Otherpkm("Plante", "Florizarre", 350);
+$pkmEnnemy = new Otherpkm("Feu", "Dracaufeu", 350);
+
+// appel de la fonction combat
+attack($pkmAlly, $pkmEnnemy);
 
 
-// appel de la fonction combat 
-attack($pkmOne, $pkmTwo);
 
-
-// attack($pkmOne, $pkmTwo);
 
 ?>
-
-<!-- Plan : -->
-<!-- Auto combat -> pokemon mort -> bouton pour relancer combat 2 -> etc... -> recommencer -->

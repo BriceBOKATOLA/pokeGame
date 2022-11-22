@@ -32,6 +32,13 @@ class Otherpkm extends Pokemon {
      */
     protected $damageSuffured;
 
+    /**
+     * Etat du pokemon
+     *
+     * @var int
+     */
+    protected $combatStatus = true;
+
 
 
     // --- CONCTRUCTEUR ---
@@ -93,6 +100,15 @@ class Otherpkm extends Pokemon {
         return $this->damage;
     }
 
+    /**
+     * l'état du pokémon
+     * @return bool
+     */
+    public function getCombatStatus():bool
+    {
+        return $this->combatStatus;
+    }
+
     // SETTER
 
     /**
@@ -136,6 +152,17 @@ class Otherpkm extends Pokemon {
     public function setDamage(int $damage):self
     {
         $this->damage = $damage;
+        return $this;
+    }
+
+    /**
+     * défini l'état du pokémon'
+     * @param bool $statedamage
+     * @return self
+     */
+    public function setCombatStatus(int $status):self
+    {
+        $this->combatStatus = $status;
         return $this;
     }
 
