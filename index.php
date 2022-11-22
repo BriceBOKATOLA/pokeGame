@@ -101,6 +101,25 @@
     <div class="row">
       <div class="col-12">
         <h2 class="text-center mt-3">Pokemon</h2>
+         <!-------------------------- selection  --------------------->
+         <form action="index.php" method="GET">
+                <select name="choix">
+                    <option value="Dito">Sélectionné votre Pokemon</option>
+                    <option value="Dito">Dito</option>
+                    <option value="Dracaufeu">Dracaufeu</option>
+                    <option value="Tortank">Tortank</option>
+                    <option value="Florizarre">Florizarre</option>
+                    <option value="pikachu">pikachu</option>
+                    <option value="Chenipan">Chenipan</option>
+                </select> <br>
+                <br>
+                <input type="submit" name="Envoyer" value="Valider">
+            </form>
+            <?php
+            if (isset($_GET['Envoyer'])) {
+                echo "vous avez selectionné" . ':  ' . $_GET['choix'];
+            }
+            ?>
         <div id="pokeTable" class="row mt-3 p-3">
 
         </div>
