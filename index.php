@@ -71,6 +71,58 @@
 </head>
 <body>
      
+<div class="container dotted p-4 mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center mt-3">Pokemon</h2>
+            <!-- select  -->
+            <!-------------------------- selection  --------------------->
+            <form action="index.php" method="GET">
+                <select name="choix">
+                    <option value="">Sélectionné votre Pokemon</option>
+                    <option value="Dito">Dito</option>
+                    <option value="Dracaufeu">Dracaufeu</option>
+                    <option value="Tortank">Tortank</option>
+                    <option value="Florizarre">Florizarre</option>
+                    <option value="pikachu">pikachu</option>
+                    <option value="Chenipan">Chenipan</option>
+                </select> <br>
+                <br>
+                <select name="ad">
+                    <option value="">Sélectionné votre Pokemon</option>
+                    <option value="Dito">Dito</option>
+                    <option value="Dracaufeu">Dracaufeu</option>
+                    <option value="Tortank">Tortank</option>
+                    <option value="Florizarre">Florizarre</option>
+                    <option value="pikachu">pikachu</option>
+                    <option value="Chenipan">Chenipan</option>
+                </select> <br>
+                <br>
+                </select> <br>
+                <select name="at">
+                    <option value="">Sélectionné votre Pokemon</option>
+                    <option value="Dito">Dito</option>
+                    <option value="Dracaufeu">Dracaufeu</option>
+                    <option value="Tortank">Tortank</option>
+                    <option value="Florizarre">Florizarre</option>
+                    <option value="pikachu">pikachu</option>
+                    <option value="Chenipan">Chenipan</option>
+                </select> <br>
+                <br>
+                <input type="submit" name="Envoyer" value="Valider">
+            </form>
+            <?php
+            if (isset($_GET['Envoyer'])) {
+                echo "vous avez selectionné" . ':  '.'<br>'. $_GET['choix'].'<br>'.' '.$_GET['ad'].'<br>'.' '.$_GET['at'];
+            }
+            ?>
+            <!-- adversaire  -->
+
+            <div id="pokeTable" class="row mt-3 p-3">
+            </div>
+
+
+        </div>
     <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
     <main class="site-content">
         <!---------------------------------------------------------------Header------------------------------------------------------------->
@@ -101,7 +153,7 @@
     
     <!---------------------------------------------------------------Footer------------------------------------------------------------->
     <footer class="content-footer">
-
+    <script src="./assets/script.js"></script>
     </footer>
     
 </body>
