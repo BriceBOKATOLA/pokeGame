@@ -20,17 +20,18 @@ class Otherpkm extends Pokemon {
     protected $strongAgainst;
 
     /**
-     * Nombre de dégâts subit par le pokemon
-     *
-     * @var int
-     */
-    protected $damageSuffured;
-
-    /**
      * Dégâts du personnage
      * @var int
      */
     private $damage;
+
+    /**
+     * Nombre de dégâts subit par le pokemon
+     *
+     * @var int
+     */
+    protected $damageSuffured = 0;
+
 
 
     // --- CONCTRUCTEUR ---
@@ -41,12 +42,12 @@ class Otherpkm extends Pokemon {
      * @param string $name
      * @param integer $health
      */
-    public function __construct(string $type, string $name, int $health, string $weakAgainst, string $strongAgainst)
+    public function __construct(string $type, string $name, int $health)
     {
         parent::__construct($type, $name, $health);
 
-        $this->weakAgainst = $weakAgainst;
-        $this->strongAgainst = $strongAgainst;
+        // $this->weakAgainst = $weakAgainst;
+        // $this->strongAgainst = $strongAgainst;
     }
 
     // --- METHODS ---
@@ -144,7 +145,7 @@ class Otherpkm extends Pokemon {
      */
     public function attack(): int
     {
-        $this->setDamage(rand(600, 800));
+        $this->setDamage(rand(35, 100));
         return $this->getDamage();
     }
 

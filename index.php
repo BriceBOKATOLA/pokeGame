@@ -42,7 +42,7 @@ for ($id = 1; $id <= 10 ; $id++) {
     echo'<img src="'.$pokemon->sprites->front_default.'"width="200">';
 }
 
-var_dump($pokemon);
+// var_dump($pokemon);
 
 ?>
 <!-- fin du test  -->
