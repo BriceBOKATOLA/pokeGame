@@ -88,7 +88,7 @@ attack($ally[0], $ennemy[0]);
             </div>
             <div class="container-message">
                 <div class="message">
-                    <p>Salamèche à prit 50 de dégât !!</p>
+                    <p><?= $ally[0]->getName();?> à prit <?= $ally[0]->getDamageSuffured(); ?> de dégât !!</p>
                 </div>
             </div>
         </div>
@@ -98,11 +98,11 @@ attack($ally[0], $ennemy[0]);
                 <div class="container-pokebaall">
                     <div class="pokeball_1 item-pokeball">
                         <img src="./assets/img/pokeball.png">
-                        <p class="name-pokemon-leftover">Salameche</p>
+                        <p class="name-pokemon-leftover"><?= $ally[1]->getName();?></p>
                     </div>
                     <div class="pokeball_2 item-pokeball">
                         <img src="./assets/img/pokeball.png" class="pokeball_2">
-                        <p class="name-pokemon-leftover">Salameche</p>
+                        <p class="name-pokemon-leftover"><?= $ally[2]->getName();?></p>
                     </div>
                 </div>
             </div>
