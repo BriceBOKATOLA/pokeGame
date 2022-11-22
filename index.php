@@ -31,17 +31,17 @@
 // Recuperation des elements de l'api 
 
 // <!-- recuperé tout le tableau  -->
-$base = "https://pokeapi.co/api/v2/pokemon/";
-echo '<h1>PoKemon</h1>';
-for ($id = 1; $id <= 10 ; $id++) { 
-    $data = file_get_contents($base.$id.'/');
-    $pokemon = json_decode($data);
-    echo $pokemon->name."<br>";
-    // types 
-    echo $pokemon->types[0]->type->name."<br>";
-// recuperation de l'image
-    echo'<img src="'.$pokemon->sprites->front_default.'"width="200">';
-}
+// $base = "https://pokeapi.co/api/v2/pokemon/";
+// echo '<h1>PoKemon</h1>';
+// for ($id = 1; $id <= 10 ; $id++) { 
+//     $data = file_get_contents($base.$id.'/');
+//     $pokemon = json_decode($data);
+//     echo $pokemon->name."<br>";
+//     // types 
+//     echo $pokemon->types[0]->type->name."<br>";
+// // recuperation de l'image
+//     echo'<img src="'.$pokemon->sprites->front_default.'"width="200">';
+// }
 
 // var_dump($pokemon);
 
@@ -58,6 +58,19 @@ for ($id = 1; $id <= 10 ; $id++) {
     <title>Document</title>
 </head>
 <body>
+<div class="container dotted p-4 mt-4">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center mt-3">Pokemon</h2>
+        <div id="pokeTable" class="row mt-3 p-3">
+
+        </div>
+    </div>
+
+
+
+
+    <script src="./assets/script.js"></script>
     
 </body>
 </html>
