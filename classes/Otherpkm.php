@@ -20,17 +20,18 @@ class Otherpkm extends Pokemon {
     protected $strongAgainst;
 
     /**
+     * Dégâts du personnage
+     * @var int
+     */
+    private $damage;
+
+    /**
      * Nombre de dégâts subit par le pokemon
      *
      * @var int
      */
     protected $damageSuffured;
 
-    /**
-     * Dégâts du personnage
-     * @var int
-     */
-    private $damage;
 
 
     // --- CONCTRUCTEUR ---
@@ -41,12 +42,12 @@ class Otherpkm extends Pokemon {
      * @param string $name
      * @param integer $health
      */
-    public function __construct(string $type, string $name, int $health, string $weakAgainst, string $strongAgainst)
+    public function __construct(string $type, string $name, int $health)
     {
         parent::__construct($type, $name, $health);
 
-        $this->weakAgainst = $weakAgainst;
-        $this->strongAgainst = $strongAgainst;
+        // $this->weakAgainst = $weakAgainst;
+        // $this->strongAgainst = $strongAgainst;
     }
 
     // --- METHODS ---
@@ -144,7 +145,7 @@ class Otherpkm extends Pokemon {
      */
     public function attack(): int
     {
-        $this->setDamage(rand(600, 800));
+        $this->setDamage(rand(35, 50));
         return $this->getDamage();
     }
 
@@ -153,8 +154,15 @@ class Otherpkm extends Pokemon {
      * @param int $damage
      * @return self
      */
-    public function attacked(int $damage):self
+    public function attacked(int $damage, string $typeEnnemy):self
     {
+        // attaque efficace
+        if (($this->type = "Plante" && ($typeEnnemy = "Feu" || $typeEnnemy = "Insecte")) || ($this->type = "Eau" && ($typeEnnemy = "Plante" || $typeEnnemy = "Electrique")) || ($this->type = "Feu" && $typeEnnemy = "Eau") || ($this->type = "Insecte" && $typeEnnemy = "Feu")){
+            $damage = $damage * 2;
+        }
+
+
+
         $this->setHealth($this->getHealth() - $damage);
         
         if ($this->getHealth() < 0){
