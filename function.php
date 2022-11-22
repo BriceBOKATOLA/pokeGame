@@ -15,19 +15,19 @@ function attack($currentAlly, $currentEnnemy) {
   
         if ($currentAlly->getHealth() > 0 && $currentEnnemy->getHealth() > 0) {
             // pkm 2 attaque
-            $currentAlly->attacked($currentEnnemy->attack(), $currentAlly->getType());
+            $currentAlly->attacked($currentEnnemy->attack(), $currentEnnemy->getType());
 
-            echo '<p>Dégâts ennemie : ' . $currentEnnemy->getDamage() . '</p>';
+            echo '<p>Dégâts ennemie : ' . $currentAlly->getDamageSuffured() . '</p>';
             echo '<p>Vie ennemie : ' . $currentEnnemy->getHealth() . '</p>';
 
             if (!($currentAlly->getHealth() <= 0) && !($currentEnnemy->getHealth() <= 0)){
                 // pkm 1 attaque
-                $currentEnnemy->attacked($currentAlly->attack(), $currentEnnemy->getType());
+                $currentEnnemy->attacked($currentAlly->attack(), $currentAlly->getType());
 
-                echo '<p>Dégâts allié : ' . $currentAlly->getDamage() . '</p>';
+                echo '<p>Dégâts allié : ' . $currentEnnemy->getDamageSuffured() . '</p>';
                 echo '<p>Vie allié : ' . $currentAlly->getHealth() . '</p>';
             }
-
+        }
 
             if ($currentAlly->getHealth() <= 0) {
                 echo '<b>Le pokémon allié est hors combat !</b>';
@@ -39,6 +39,5 @@ function attack($currentAlly, $currentEnnemy) {
                 echo '<hr>';
             }
 
-        }
     }
 }

@@ -52,7 +52,7 @@
             "back_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/10.png",
             "type": "insecte",
             "faiblesse": "",
-            "force": ""
+            "force": "Plante"
         }
 
     ]

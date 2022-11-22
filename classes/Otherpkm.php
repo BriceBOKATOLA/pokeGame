@@ -157,13 +157,14 @@ class Otherpkm extends Pokemon {
     public function attacked(int $damage, string $typeEnnemy):self
     {
         // attaque efficace
-        if (($this->type = "Plante" && ($typeEnnemy = "Feu" || $typeEnnemy = "Insecte")) || ($this->type = "Eau" && ($typeEnnemy = "Plante" || $typeEnnemy = "Electrique")) || ($this->type = "Feu" && $typeEnnemy = "Eau") || ($this->type = "Insecte" && $typeEnnemy = "Feu")){
+        if(($this->type == "Plante" && ($typeEnnemy == "Feu" || $typeEnnemy == "Insecte")) || ($this->type == "Eau" && ($typeEnnemy == "Plante" || $typeEnnemy == "Electrique")) || ($this->type == "Feu" && $typeEnnemy == "Eau") || ($this->type == "Insecte" && $typeEnnemy == "Feu"))
+        {
             $damage = $damage * 2;
         }
 
+        $this->setDamageSuffured($damage);
 
-
-        $this->setHealth($this->getHealth() - $damage);
+        $this->setHealth($this->getHealth() - $this->getDamageSuffured());
         
         if ($this->getHealth() < 0){
             $this->setHealth(0);
