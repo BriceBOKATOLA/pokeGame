@@ -15,6 +15,9 @@ function attack($currentAlly, $currentEnnemy) {
             echo '<p>Vie de '. $currentEnnemy->getName() . ' : ' . $currentEnnemy->getHealth() . '</p>';
 
             if (!($currentAlly->getHealth() <= 0) && !($currentEnnemy->getHealth() <= 0)){
+                echo '<hr>';
+                $tour = $tour + 1;
+                echo '<p><b>Tour : ' . $tour . '</b></p>';
                 // pkm 1 attaque
                 $currentEnnemy->attacked($currentAlly->attack(), $currentAlly->getType());
 
