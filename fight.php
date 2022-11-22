@@ -8,9 +8,8 @@ $pkmPlayer = ['Dracaufeu', 'Tortank', 'Zoroark'];
 $pkmComputer = ['Florizarre', 'Rayquaza', 'Pikachu'];
 
 
-$pkmOne = new Otherpkm("Plante", "Bulbizard", 350, 200);
-$pkmTwo = new Otherpkm("Feu", "Salamèche", 350, 200);
-
+$pkmOne = new Otherpkm("Plante", "Bulbizard", 350);
+$pkmTwo = new Otherpkm("Feu", "Salamèche", 350);
 
 
 

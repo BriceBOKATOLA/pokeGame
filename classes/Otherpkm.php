@@ -30,7 +30,7 @@ class Otherpkm extends Pokemon {
      *
      * @var int
      */
-    protected $damageSuffured = 0;
+    protected $damageSuffured;
 
 
 
@@ -145,7 +145,7 @@ class Otherpkm extends Pokemon {
      */
     public function attack(): int
     {
-        $this->setDamage(rand(35, 100));
+        $this->setDamage(rand(35, 50));
         return $this->getDamage();
     }
 
@@ -154,8 +154,15 @@ class Otherpkm extends Pokemon {
      * @param int $damage
      * @return self
      */
-    public function attacked(int $damage):self
+    public function attacked(int $damage, string $typeEnnemy):self
     {
+        // attaque efficace
+        if (($this->type = "Plante" && ($typeEnnemy = "Feu" || $typeEnnemy = "Insecte")) || ($this->type = "Eau" && ($typeEnnemy = "Plante" || $typeEnnemy = "Electrique")) || ($this->type = "Feu" && $typeEnnemy = "Eau") || ($this->type = "Insecte" && $typeEnnemy = "Feu")){
+            $damage = $damage * 2;
+        }
+
+
+
         $this->setHealth($this->getHealth() - $damage);
         
         if ($this->getHealth() < 0){
