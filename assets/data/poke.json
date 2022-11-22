@@ -16,7 +16,7 @@
             "back_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png",
             "type": "Feu",
             "faiblesse": "Eau",
-            "force": "Feu"
+            "force": ""
         },
         {
             "id": 9,

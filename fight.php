@@ -57,9 +57,9 @@ attack($ally[0], $ennemy[0]);
                 <img src="./assets/img/tortank.png">
             </div>
             <div class="card_pokemon_top">
-            <div class="item-card-top">
+                <div class="item-card-top">
                     <div class="name-level">
-                        <p class="name-pokemon"><?= $ennemy[0]->getName() ?></p>
+                        <p class="name-pokemon"><?= $ennemy[0]->getName();?></p>
                         <p class="level-pokemon">Lv25</p>
                     </div>
                     <div class="item-progress">
@@ -68,13 +68,13 @@ attack($ally[0], $ennemy[0]);
                             <div class="progress-value progress-value-divers-4"></div>
                         </div>
                     </div>
-                    <p class="pv"><?= $ennemy[0]->getHealth() ?>/350</p>
+                    <p class="pv"><?= $ennemy[0]->getHealth();?>/350</p>
                 </div>
             </div>
             <div class="card_pokemon_bottom">
                 <div class="item-card-bottom">
                     <div class="name-level">
-                        <p class="name-pokemon"><?= $ally[0]->getName() ?></p>
+                        <p class="name-pokemon"><?= $ally[0]->getName();?></p>
                         <p class="level-pokemon">Lv25</p>
                     </div>
                     <div class="item-progress">
@@ -83,9 +83,41 @@ attack($ally[0], $ennemy[0]);
                             <div class="progress-value progress-value-divers-4"></div>
                         </div>
                     </div>
-                    <p class="pv"><?= $ally[0]->getHealth() ?>/350</p>
+                    <p class="pv"><?= $ally[0]->getHealth();?>/350</p>
                 </div>
             </div>
+            <div class="container-message">
+                <div class="message">
+                    <p>Salamèche à prit 50 de dégât !!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-console">
+            <div class="pokemon-leftover">
+                <p class="title-pokemon-leftover">Pokemon restant</p>
+                <div class="container-pokebaall">
+                    <div class="pokeball_1 item-pokeball">
+                        <img src="./assets/img/pokeball.png">
+                        <p class="name-pokemon-leftover">Salameche</p>
+                    </div>
+                    <div class="pokeball_2 item-pokeball">
+                        <img src="./assets/img/pokeball.png" class="pokeball_2">
+                        <p class="name-pokemon-leftover">Salameche</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-button-attack">
+                <div class="button-attack">
+                    <img src="./assets/img/attack.png">
+                </div>
+
+                <div class="button-super-attack">
+                    <img src="./assets/img/explosion.png">
+                </div>
+            </div>
+        </div>
+        <div class="leave-btn">
+            <button>Abandonner</button>
         </div>
     </main>
     <!---------------------------------------------------------------Fin contenu------------------------------------------------------------->
