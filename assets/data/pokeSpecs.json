@@ -1,0 +1,56 @@
+{
+    "Métamorphe": {
+        "id": 132,
+        "name": "Métamorphe",
+        "front_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+        "back_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png",
+        "type": "normal",
+        "faiblesse": "",
+        "force": ""
+    },
+    "Dracaufeu": {
+        "id": 6,
+        "name": "Dracaufeu",
+        "front_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "back_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png",
+        "type": "Feu",
+        "faiblesse": "Eau",
+        "force": ""
+    },
+    "Tortank": {
+        "id": 9,
+        "name": "Tortank",
+        "front_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+        "back_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
+        "type": "Eau",
+        "faiblesse": "Plante",
+        "force": "Feu"
+    },
+    "Florizarre": {
+        "id": 3,
+        "name": "Florizarre",
+        "front_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+        "back_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
+        "type": "Plante",
+        "faiblesse": "Feu",
+        "force": "Eau"
+    },
+    "Pikachu": {
+        "id": 25,
+        "name": "pikachu",
+        "front_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "back_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png",
+        "type": "electrique",
+        "faiblesse": "",
+        "force": "Eau"
+    },
+    "Chenipan": {
+        "id": 10,
+        "name": "Chenipan",
+        "front_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+        "back_image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/10.png",
+        "type": "insecte",
+        "faiblesse": "",
+        "force": "Plante"
+    }
+}

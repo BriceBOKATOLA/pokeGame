@@ -111,11 +111,11 @@
                 echo "vous avez selectionné" . ':  '.'<br>'. $_GET['choix'].'<br>'.' '.$_GET['ad'].'<br>'.' '.$_GET['at'];
             }
             ?>
-    <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
-    <main class="site-content">
+   <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
+   <main class="site-content">
         <!---------------------------------------------------------------Header------------------------------------------------------------->
         <header class="content-header">
-            <img class="logo-pokemon" src="./img/logo_pokemon.png">
+            <img class="logo-pokemon" src="./assets/img/logo_pokemon.png">
         </header>
         <!---------------------------------------------------------------Fin header------------------------------------------------------------->
         <div class="container-trainer">
@@ -127,7 +127,7 @@
                     <label for="name">Nom du dresseur :</label>
                     <input type="text" for="name" placeholder="Nom du dresseur">
                 </form>
-                <a href="./fight.php"><button class="btn-trainer-name">Suivant</button></a>
+                <a href="./choose_pokemon.php"><button class="btn-trainer-name">Suivant</button></a>
             </div>
             <figure class="img-trainer">
                 <img src="./assets/img/dresseur.png">
@@ -136,19 +136,12 @@
         </div>
     </main>
     <!---------------------------------------------------------------Fin contenu------------------------------------------------------------->
-    <div class="container dotted p-4 mt-4">
-    <div class="row">
-        <div class="col-12">
-            <div id="pokeTable" class="row mt-3 p-3">
-            </div>
-
-        </div>
 
     
     
     <!---------------------------------------------------------------Footer------------------------------------------------------------->
     <footer class="content-footer">
-    <script src="./assets/script.js"></script>
+
     </footer>
     
 </body>

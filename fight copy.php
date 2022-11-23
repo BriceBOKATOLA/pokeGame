@@ -95,7 +95,7 @@ attack($ally[$allyNb], $ennemy[$ennemyNb]);
                 </div>
             </div>
             <!-- Message du combat -->
-            <div class="message-action-pokemon">
+            <div class="container-message">
                 <div class="message">
                     <p><?= $ally[$allyNb]->getHealth() ? $ally[$allyNb]->getName() . ' à vaincu le pokémon adverse !' : $ennemy[$ennemyNb]->getName() . ' à vaincu le pokémon adverse !';?></p>
                 </div>
@@ -130,15 +130,6 @@ attack($ally[$allyNb], $ennemy[$ennemyNb]);
             <button>Abandonner</button>
         </div>
     </main>
-    <div class="overlay-leave">
-        <h2>Voulez-vous abondonner</h2>
-        <div class="container-button">
-            <div class="continu-btn">
-                <button>Non</button>
-            </div>
-            <a href="./index.php" class="btn-yes"><button>Oui</button></a>
-        </div>
-    </div>
     <!---------------------------------------------------------------Fin contenu------------------------------------------------------------->
 
     
