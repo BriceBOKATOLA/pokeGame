@@ -1,4 +1,4 @@
-<?php require_once'./function_choose.php' ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -55,7 +55,7 @@
                     <option value="Chenipan">Chenipan</option>
                 </select> <br>
                 <br>
-                <input type="submit" name="Envoyer" value="Valider">
+                <button type="submit">Valider</button>
             </form>
     <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
     <main class="site-content-choose">
