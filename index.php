@@ -70,47 +70,7 @@
     <script async src="./assets/js/script.js"></script>
 </head>
 <body>
-            <!-- select  -->
-            <!-------------------------- selection  --------------------->
-            <form action="index.php" method="GET">
-                <select name="choix">
-                    <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Métamorphe">Métamorphe</option>
-                    <option value="Dracaufeu">Dracaufeu</option>
-                    <option value="Tortank">Tortank</option>
-                    <option value="Florizarre">Florizarre</option>
-                    <option value="pikachu">pikachu</option>
-                    <option value="Chenipan">Chenipan</option>
-                </select> <br>
-                <br>
-                <select name="ad">
-                    <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Métamorphe">Métamorphe</option>
-                    <option value="Dracaufeu">Dracaufeu</option>
-                    <option value="Tortank">Tortank</option>
-                    <option value="Florizarre">Florizarre</option>
-                    <option value="pikachu">pikachu</option>
-                    <option value="Chenipan">Chenipan</option>
-                </select> <br>
-                <br>
-                </select> <br>
-                <select name="at">
-                    <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Métamorphe">Métamorphe</option>
-                    <option value="Dracaufeu">Dracaufeu</option>
-                    <option value="Tortank">Tortank</option>
-                    <option value="Florizarre">Florizarre</option>
-                    <option value="pikachu">pikachu</option>
-                    <option value="Chenipan">Chenipan</option>
-                </select> <br>
-                <br>
-                <input type="submit" name="Envoyer" value="Valider">
-            </form>
-            <?php
-            if (isset($_GET['Envoyer'])) {
-                echo "vous avez selectionné" . ':  '.'<br>'. $_GET['choix'].'<br>'.' '.$_GET['ad'].'<br>'.' '.$_GET['at'];
-            }
-            ?>
+
    <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
    <main class="site-content">
         <!---------------------------------------------------------------Header------------------------------------------------------------->
