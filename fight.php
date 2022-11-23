@@ -10,21 +10,22 @@ $pkmComputer = ['Florizarre', 'Métamorphe', 'Pikachu'];
 
 // Ally
 $ally = [
-    $pkmAlly1 = new Otherpkm("Feu", "Dracaufeu", 350),
-    $pkmAlly2 = new Otherpkm("Eau", "Tortank", 350),
-    $pkmAlly3 = new Otherpkm("Insecte", "Chenipan", 350)
+    $pkmAlly1 = new Otherpkm("Feu", "Dracaufeu", 100),
+    $pkmAlly2 = new Otherpkm("Eau", "Tortank", 100),
+    $pkmAlly3 = new Otherpkm("Insecte", "Chenipan", 100)
 ];
 
 // Ennemy
 $ennemy = [
-    $pkmEnnemy1 = new Otherpkm("Plante", "Florizarre", 350),
-    $pkmEnnemy2 = new Otherpkm("Normal", "Métamorphe", 350),
-    $pkmEnnemy3 = new Otherpkm("Electrique", "Pikachu", 350)
+    $pkmEnnemy1 = new Otherpkm("Plante", "Florizarre", 100),
+    $pkmEnnemy2 = new Otherpkm("Normal", "Métamorphe", 100),
+    $pkmEnnemy3 = new Otherpkm("Electrique", "Pikachu", 100)
 ];
 
 // appel de la fonction combat
 attack($ally[0], $ennemy[0]);
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -44,6 +45,8 @@ attack($ally[0], $ennemy[0]);
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- appel dossier JavaScript -->
     <script async src="./assets/js/script.js"></script>
+    <style> .progress-value-ally { width: <?= $ally[0]->getHealth(); ?>%; } </style>
+    <style> .progress-value-ennemy { width: <?= $ennemy[0]->getHealth(); ?>%; } </style>
 </head>
 <body>
      
@@ -65,10 +68,10 @@ attack($ally[0], $ennemy[0]);
                     <div class="item-progress">
                         <p>Hp</p>
                         <div class="progress">
-                            <div class="progress-value progress-value-divers-4"></div>
+                            <div class="progress-value progress-value-ennemy"></div>
                         </div>
                     </div>
-                    <p class="pv"><?= $ennemy[0]->getHealth();?>/350</p>
+                    <p class="pv"><?= $ennemy[0]->getHealth();?>/100</p>
                 </div>
             </div>
             <div class="card_pokemon_bottom">
@@ -80,10 +83,10 @@ attack($ally[0], $ennemy[0]);
                     <div class="item-progress">
                         <p>Hp</p>
                         <div class="progress">
-                            <div class="progress-value progress-value-divers-4"></div>
+                            <div class="progress-value progress-value-ally"></div>
                         </div>
                     </div>
-                    <p class="pv"><?= $ally[0]->getHealth();?>/350</p>
+                    <p class="pv"><?= $ally[0]->getHealth();?>/100</p>
                 </div>
             </div>
             <div class="container-message">

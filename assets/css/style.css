@@ -263,7 +263,7 @@ header .logo-pokemon{
     border-radius: 100px;
     background-color: #A8DD3A;
     height: 15px;
-    width: 80%;
+    /* width: 80%; */
   }
   
   .bar-progress.actif-progress-bar{

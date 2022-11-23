@@ -172,7 +172,7 @@ class Otherpkm extends Pokemon {
      */
     public function attack(): int
     {
-        $this->setDamage(rand(35, 50));
+        $this->setDamage(rand(20, 40));
         return $this->getDamage();
     }
 
