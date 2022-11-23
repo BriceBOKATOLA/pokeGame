@@ -22,8 +22,11 @@ $ennemy = [
     $pkmEnnemy3 = new Otherpkm("Electrique", "Pikachu", 100)
 ];
 
+$allyNb = 0;
+$ennemyNb = 2;
+
 // appel de la fonction combat
-attack($ally[0], $ennemy[0]);
+attack($ally[$allyNb], $ennemy[$ennemyNb]);
 ?>
 
 <!DOCTYPE html>
@@ -45,8 +48,8 @@ attack($ally[0], $ennemy[0]);
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- appel dossier JavaScript -->
     <script async src="./assets/js/script.js"></script>
-    <style> .progress-value-ally { width: <?= $ally[0]->getHealth(); ?>%; } </style>
-    <style> .progress-value-ennemy { width: <?= $ennemy[0]->getHealth(); ?>%; } </style>
+    <style> .progress-value-ally { width: <?= $ally[$allyNb]->getHealth(); ?>%; } </style>
+    <style> .progress-value-ennemy { width: <?= $ennemy[$ennemyNb]->getHealth(); ?>%; } </style>
 </head>
 <body>
      
@@ -57,12 +60,13 @@ attack($ally[0], $ennemy[0]);
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png">
             </div>
             <div class="pokemon-top pokemon">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
             </div>
+            <!-- Info pokémon ennemi -->
             <div class="card_pokemon_top">
                 <div class="item-card-top">
                     <div class="name-level">
-                        <p class="name-pokemon"><?= $ennemy[0]->getName();?></p>
+                        <p class="name-pokemon"><?= $ennemy[$ennemyNb]->getName();?></p>
                         <p class="level-pokemon">Lv25</p>
                     </div>
                     <div class="item-progress">
@@ -71,13 +75,14 @@ attack($ally[0], $ennemy[0]);
                             <div class="progress-value progress-value-ennemy"></div>
                         </div>
                     </div>
-                    <p class="pv"><?= $ennemy[0]->getHealth();?>/100</p>
+                    <p class="pv"><?= $ennemy[$ennemyNb]->getHealth();?>/100</p>
                 </div>
             </div>
+            <!-- Info pokémon allié -->
             <div class="card_pokemon_bottom">
                 <div class="item-card-bottom">
                     <div class="name-level">
-                        <p class="name-pokemon"><?= $ally[0]->getName();?></p>
+                        <p class="name-pokemon"><?= $ally[$allyNb]->getName();?></p>
                         <p class="level-pokemon">Lv25</p>
                     </div>
                     <div class="item-progress">
@@ -86,16 +91,18 @@ attack($ally[0], $ennemy[0]);
                             <div class="progress-value progress-value-ally"></div>
                         </div>
                     </div>
-                    <p class="pv"><?= $ally[0]->getHealth();?>/100</p>
+                    <p class="pv"><?= $ally[$allyNb]->getHealth();?>/100</p>
                 </div>
             </div>
+            <!-- Message du combat -->
             <div class="container-message">
                 <div class="message">
-                    <p><?= $ally[0]->getName();?> à prit <?= $ally[0]->getDamageSuffured(); ?> de dégât !!</p>
+                    <p><?= $ally[$allyNb]->getHealth() ? $ally[$allyNb]->getName() . ' à vaincu le pokémon adverse !' : $ennemy[$ennemyNb]->getName() . ' à vaincu le pokémon adverse !';?></p>
                 </div>
             </div>
         </div>
         <div class="container-console">
+            <!-- Pokémon restant dans l'équipe -->
             <div class="pokemon-leftover">
                 <p class="title-pokemon-leftover">Pokemon restant</p>
                 <div class="container-pokebaall">
