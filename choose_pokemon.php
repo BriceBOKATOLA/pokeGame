@@ -1,4 +1,4 @@
-
+<?php  require_once './function.php'  ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -74,9 +74,9 @@
                         <option value="Pikachu">Pikachu</option>
                         <option value="Chenipan">Chenipan</option>
                     </select>
-                        <p>Tortank  <img src="./assets/img/9.png"></p>
-                        <p>Pingoléon <img src="./assets/img/395.png"></p>
-                        <p>Amphinobie <img src="./assets/img/658.png"></p>
+                        <p>Tortank  <img src="<?= get_pokemon_image('Tortank', 'front_image') ?>"></p>
+                        <p>Pingoléon <img src="<?= get_pokemon_image('Pingoléon', 'front_image') ?>"></p>
+                        <p>Amphinobie <img src="<?= get_pokemon_image('Pingoléon', 'front_image') ?>"></p>
                     </div>
                 </div>
                 <div class="select-pokemon-plant">
