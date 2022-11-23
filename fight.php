@@ -26,8 +26,10 @@ foreach ($pkmComputer as $key => $value) {
     array_push($ennemy, set_pokemon(get_pokemon_type($value), $value));
 }
 
+// Index du pokémon utilisé en combat
 $allyNb = 0;
-$ennemyNb = rand(0, 2);
+// Choisie aléatoirement un index de pokémon à envoyer au combat
+$ennemyNb = rand(0, count($pkmComputer) - 1);
 
 // appel de la fonction combat
 attack($ally[$allyNb], $ennemy[$ennemyNb]);
