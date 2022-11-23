@@ -47,6 +47,17 @@ header .logo-pokemon{
     height: 200px;
 }
 
+@media (max-width: 1000px) {
+    .site-content{
+      width: 100%;
+    }
+    header .logo-pokemon{
+        width: 300px;
+        height: 150px;
+    }
+
+  }
+
 /* style index */
 /* ---------------------------------------------------- */
 .container-trainer{
@@ -281,6 +292,14 @@ header .logo-pokemon{
 /* style figth page */
 /* ---------------------------------------------------- */
 
+.site-content-fightt{
+    height: 100vh;
+    width: 65%;
+    background-color: #F8F7DE;
+    margin: auto;
+    overflow: hidden;
+}
+
 .container-fight{
     position: relative;
     width: 100%;
@@ -366,7 +385,6 @@ header .logo-pokemon{
     font-size: 18px;
 
 }
-
 
 /* bar progess */
 
@@ -469,6 +487,7 @@ header .logo-pokemon{
 .title-pokemon-leftover{
     font-family:"pokemon-gb";
     font-size: 18px;
+    white-space: nowrap;
 }
 
 .container-pokebaall{
@@ -539,7 +558,7 @@ header .logo-pokemon{
 .leave-btn{
     width: 100%;
     text-align: center;
-    transform: translateY(-50px);
+    transform: translateY(80px);
 }
 
 .leave-btn button{
@@ -550,6 +569,23 @@ header .logo-pokemon{
     font-size: 11px;
     border-radius: 100px;
 }
+
+.leave-btn-mobile{
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50px);
+    display: none;
+}
+
+.leave-btn-mobile button{
+    border: 2px solid #394126;
+    background-color: transparent;
+    padding: 5px 30px;
+    font-family:"pokemon-gb";
+    font-size: 11px;
+    border-radius: 100px;
+}
+
 
 /* overlay leave */
 
@@ -615,3 +651,322 @@ header .logo-pokemon{
     font-size: 11px;
     border-radius: 100px;
 }
+
+@media (max-width: 1000px) {
+
+    /* page index */
+    .container-trainer{
+        width: 100%;
+        height: auto;
+        padding: 50px;
+        padding-top: 0;
+    }
+    
+    .choise-trainer{
+        width: 100%;
+    }
+    
+    .container-message{
+        width: 100%;
+    }
+    
+    .container-message p {
+        font-size: 11px;
+    }
+    
+    .img-trainer{
+        display: none;
+    }
+
+    /* choose pokemon */
+
+    .site-content-choose{
+        width: 100%;
+    }
+
+    .ball { 
+        width: 80%;
+     }
+     
+    .ball-size{
+        width: 60%;
+        border: red 3px solid;
+        border-radius: 80%;
+    } 
+
+    .dir{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .select-pokemon-fire {
+        width: 80%;
+        height: 450px;
+    } 
+    .select-pokemon-water {
+        font-family: "pokemon-gb";
+        width: 80%;
+        height: 450px;
+        margin-left:0;
+        margin-top: 30px;
+    } 
+    .select-pokemon-plant {
+        width: 80%;
+        height: 450px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    } 
+
+    /* fight */
+    .site-content-fight{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F8F7DE;
+        margin: auto;
+        overflow: hidden;
+    }
+    .container-fight{
+        position: relative;
+        width: 70%;
+        height: 100%;
+        background-image: url(../img/background.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+
+    /* fight */
+    .pokemon-bottom{
+        width: 20%;
+        height: 20%;
+        transform: translate(70px, -120px);
+    }
+    
+    .pokemon-top{
+        width: 20%;
+        height: 20%;
+        transform: translate(-20px, 80px);
+    }
+    
+    .pokemon img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .card_pokemon_bottom{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .item-card-bottom{
+        width: 250px;
+        height: 70px;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        padding: 0;
+        transform: translateX(40px);
+    }
+    
+    .card_pokemon_top{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .item-card-top{
+        width: 250px;
+        height: 70px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 0;
+    }
+    
+    .name-level{
+        width: 70%;
+        font-family:"pokemon-gb";
+        font-size: 8px;
+        margin: 5px 10px;
+    
+    }
+    
+    /* bar progess */
+    
+    .item-progress{
+        width: 70%;
+        height: 5px;
+        padding: 5px;
+        margin: 0 10px;
+        transform: translateY(-15px);
+    }
+    .item-progress p{
+        margin: 0;
+        font-family:"pokemon-gb";
+        font-size: 7px;
+        color: white;
+        transform: translateY(2px);
+        margin-right: 10px;
+    }
+      
+      .item-label-title{
+        color: white;
+        font-size: 10px;
+        margin: 0;
+      }
+      .item-label-percentage{
+        color: white;
+        font-size: 10px;
+        margin: 0;
+      }
+      
+      .progress {
+        background: white;
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        position: relative;
+        display: flex;
+        height: 5px;
+        width: 100%;
+      }
+      
+      .progress-value {
+        box-shadow: 0 10px 40px -10px #fff;
+        border-radius: 100px;
+        background-color: #A8DD3A;
+        height: 5px;
+        width: 80%;
+      }
+      
+      .bar-progress.actif-progress-bar{
+        display: block;
+      }
+    
+      .pv{
+        width: 70%;
+        font-size: 7px;
+        margin-top: 0;
+        transform: translateY(-15px);
+      }
+    
+    
+    .message-action-pokemon{
+        width: 200px;
+        padding: 5px 15px;
+        line-height: 1rem;
+        bottom: 10px;
+    }
+    
+    .message-action-pokemon p {
+        font-family:"pokemon-gb";
+        font-size: 8px;
+        margin: 0;
+    }
+
+    /* console */
+    .container-console{
+        width: 30%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pokemon-leftover{
+        margin-top: 30px;
+    }
+    
+    .title-pokemon-leftover{
+        font-family:"pokemon-gb";
+        font-size: 10px;
+    }
+    
+    .container-pokebaall{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .container-pokebaall img {
+        height: 20px;
+        width: 20px;
+        margin: 0;
+    }
+    
+    .pokeball_2{
+        margin-left: 10px;
+    }
+    
+    .name-pokemon-leftover{
+        font-size: 8px;
+    }
+    
+    
+    /* button attack */
+    
+    .container-button-attack{
+        margin-top: -30px;
+        display: flex;
+    }
+    
+    .button-attack{
+        width: 80px;
+        height: 80px;
+        transform: translateY(10px);
+    }
+    
+    .button-attack img{
+        width: 65%;
+        height: 65%;
+        transform: translateY(-5px);
+    }
+    .button-super-attack img{
+        width: 55%;
+        height: 55%;
+        transform: translateY(0);
+    }
+    
+    .button-super-attack{
+        width: 60px;
+        height: 60px;
+        transform: translateY(-10px);
+        margin-left: 10px;
+    }
+    
+    .leave-btn{
+        width: 100%;
+        text-align: center;
+        transform: translateY(-50px);
+        display: none;
+    }
+    .leave-btn-mobile{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-10px);
+    }
+    .leave-btn-mobile button{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        font-size: 8px;
+    }
+    .overlay-leave .container-button{
+        width: 40%;
+    }
+    
+    
+  }

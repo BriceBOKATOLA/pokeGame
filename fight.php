@@ -59,7 +59,7 @@ attack($ally[$allyNb], $ennemy[$ennemyNb]);
 <body>
      
     <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
-    <main class="site-content">
+    <main class="site-content site-content-fight">
         <div class="container-fight">
             <div class="pokemon-bottom pokemon">
                 <img src="<?= get_pokemon_image($ally[$allyNb]->getName(), 'back_image')?>">
@@ -121,6 +121,9 @@ attack($ally[$allyNb], $ennemy[$ennemyNb]);
                     </div>
                 </div>
             </div>
+            <div class="leave-btn">
+                <button>Abandonner</button>
+            </div>
             <div class="container-button-attack">
                 <div class="button-attack">
                     <img src="./assets/img/attack.png">
@@ -130,9 +133,9 @@ attack($ally[$allyNb], $ennemy[$ennemyNb]);
                     <img src="./assets/img/explosion.png">
                 </div>
             </div>
-        </div>
-        <div class="leave-btn">
-            <button>Abandonner</button>
+            <div class="leave-btn-mobile">
+                <button>Abandonner</button>
+            </div>
         </div>
     </main>
     <div class="overlay-leave">

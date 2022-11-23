@@ -33,10 +33,12 @@
 // })
 
 let btn_leave = document.querySelector('.leave-btn');
+let btn_leave_mobile = document.querySelector('.leave-btn-mobile');
 let btn_continu = document.querySelector('.continu-btn');
 let overlay = document.querySelector('.overlay-leave');
 
 btn_leave.addEventListener('click', overlay_leave);
+btn_leave_mobile.addEventListener('click', overlay_leave);
 btn_continu.addEventListener('click', overlay_continu);
 
 function overlay_leave(){
