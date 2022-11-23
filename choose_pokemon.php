@@ -23,35 +23,35 @@
 <body>
                 <!-- select  -->
             <!-------------------------- selection  --------------------->
-            <form action="index.php" method="GET">
-                <select name="choix">
-                    <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Métamorphe">Métamorphe</option>
-                    <option value="Dracaufeu">Dracaufeu</option>
-                    <option value="Tortank">Tortank</option>
-                    <option value="Florizarre">Florizarre</option>
-                    <option value="pikachu">pikachu</option>
-                    <option value="Chenipan">Chenipan</option>
-                </select> <br>
-                <br>
+            <form action="./controllers/choose_pokemon-controller.php" method="GET">
                 <select name="pkm1">
                     <option value="">Sélectionné votre Pokemon</option>
                     <option value="Métamorphe">Métamorphe</option>
                     <option value="Dracaufeu">Dracaufeu</option>
                     <option value="Tortank">Tortank</option>
                     <option value="Florizarre">Florizarre</option>
-                    <option value="pikachu">pikachu</option>
+                    <option value="Pikachu">Pikachu</option>
                     <option value="Chenipan">Chenipan</option>
                 </select> <br>
                 <br>
-                </select> <br>
                 <select name="pkm2">
                     <option value="">Sélectionné votre Pokemon</option>
                     <option value="Métamorphe">Métamorphe</option>
                     <option value="Dracaufeu">Dracaufeu</option>
                     <option value="Tortank">Tortank</option>
                     <option value="Florizarre">Florizarre</option>
-                    <option value="pikachu">pikachu</option>
+                    <option value="Pikachu">Pikachu</option>
+                    <option value="Chenipan">Chenipan</option>
+                </select> <br>
+                <br>
+                </select> <br>
+                <select name="pkm3">
+                    <option value="">Sélectionné votre Pokemon</option>
+                    <option value="Métamorphe">Métamorphe</option>
+                    <option value="Dracaufeu">Dracaufeu</option>
+                    <option value="Tortank">Tortank</option>
+                    <option value="Florizarre">Florizarre</option>
+                    <option value="Pikachu">Pikachu</option>
                     <option value="Chenipan">Chenipan</option>
                 </select> <br>
                 <br>

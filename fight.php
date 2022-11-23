@@ -8,7 +8,7 @@ require_once './function.php';
 session_start();
 
 // Liste des pokémon choisie par le joueur
-$pkmPlayer = ['Dracaufeu', 'Tortank', 'Chenipan'];
+$pkmPlayer = $_SESSION['pkmPlayer'];
 $pkmComputer = ['Florizarre', 'Métamorphe', 'Pikachu'];
 
 
