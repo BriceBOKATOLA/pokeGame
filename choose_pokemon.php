@@ -23,7 +23,7 @@
 <body>
                 <!-- select  -->
             <!-------------------------- selection  --------------------->
-            <!-- <form action="index.php" method="GET">
+            <form action="index.php" method="GET">
                 <select name="choix">
                     <option value="">Sélectionné votre Pokemon</option>
                     <option value="Métamorphe">Métamorphe</option>
@@ -56,7 +56,7 @@
                 </select> <br>
                 <br>
                 <input type="submit" name="Envoyer" value="Valider">
-            </form> -->
+            </form>
     <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
     <main class="site-content-choose">
         <div class="container-ball">
