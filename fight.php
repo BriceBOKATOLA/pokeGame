@@ -15,15 +15,15 @@ $pkmComputer = ['Florizarre', 'Métamorphe', 'Pikachu'];
 // Ally
 $ally = [];
 // On créer l'équipe du joueur
-for ($i=0; $i < 3; $i++) { 
-    array_push($ally, set_pokemon(get_pokemon_type($pkmPlayer[$i]), $pkmPlayer[$i]));
+foreach ($pkmPlayer as $key => $value) {
+    array_push($ally, set_pokemon(get_pokemon_type($value), $value));
 }
 
 // Ennemy
 $ennemy = [];
 // On créer l'équipe de l'ordinateur
-for ($i=0; $i < 3; $i++) { 
-    array_push($ennemy, set_pokemon(get_pokemon_type($pkmComputer[$i]), $pkmComputer[$i]));
+foreach ($pkmComputer as $key => $value) {
+    array_push($ennemy, set_pokemon(get_pokemon_type($value), $value));
 }
 
 $allyNb = 0;
