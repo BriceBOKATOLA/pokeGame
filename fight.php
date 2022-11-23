@@ -52,6 +52,7 @@ attack($ally[$allyNb], $ennemy[$ennemyNb]);
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- appel dossier JavaScript -->
     <script async src="./assets/js/script.js"></script>
+    <!-- Style pour changer la taille de la barre de vie suivant la vie du pokémon-->
     <style> .progress-value-ally { width: <?= $ally[$allyNb]->getHealth(); ?>%; } </style>
     <style> .progress-value-ennemy { width: <?= $ennemy[$ennemyNb]->getHealth(); ?>%; } </style>
 </head>
