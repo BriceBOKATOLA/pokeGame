@@ -4,6 +4,9 @@ require_once './classes/Pokemon.php';
 require_once './classes/Otherpkm.php';
 require_once './function.php';
 
+// On démarre une session pour ensuite récupérer le nom du dresseur
+session_start();
+
 $pkmPlayer = ['Dracaufeu', 'Tortank', 'Chenipan'];
 $pkmComputer = ['Florizarre', 'Métamorphe', 'Pikachu'];
 
@@ -97,7 +100,7 @@ attack($ally[$allyNb], $ennemy[$ennemyNb]);
             <!-- Message du combat -->
             <div class="message-action-pokemon">
                 <div class="message">
-                    <p><?= $ally[$allyNb]->getHealth() ? $ally[$allyNb]->getName() . ' à vaincu le pokémon adverse !' : $ennemy[$ennemyNb]->getName() . ' à vaincu le pokémon adverse !';?></p>
+                    <p><?= $ally[$allyNb]->getHealth() ? 'Bravo '. $_SESSION['trainername'] . ' ! vous avez vaincu le pokémon adverse !' : 'L\'ordinateur vous à vaincu !';?></p>
                 </div>
             </div>
         </div>

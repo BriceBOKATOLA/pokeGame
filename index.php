@@ -81,13 +81,14 @@
         <div class="container-trainer">
             <div class="choise-trainer">
                 <div class="container-message">
-                    <p>Veuillez me renseigner le nom de votre drésseur !!</p>
+                    <p>Veuillez me renseigner le nom de votre dresseur !!</p>
                 </div>
-                <form action="" method="POST" class="form-name-trainer">
+                <form action="./controllers/index-controller.php" method="GET" class="form-name-trainer">
                     <label for="name">Nom du dresseur :</label>
-                    <input type="text" for="name" placeholder="Nom du dresseur">
+                    <input type="text" for="name" placeholder="Nom du dresseur" name="trainername">
+                    <button type="submit" class="btn-trainer-name">Suivant</button>
                 </form>
-                <a href="./choose_pokemon.php"><button class="btn-trainer-name">Suivant</button></a>
+            
             </div>
             <figure class="img-trainer">
                 <img src="./assets/img/dresseur.png">
