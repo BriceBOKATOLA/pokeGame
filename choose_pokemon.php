@@ -1,3 +1,4 @@
+<?php require_once'./function_choose.php' ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -33,7 +34,7 @@
                     <option value="Chenipan">Chenipan</option>
                 </select> <br>
                 <br>
-                <select name="ad">
+                <select name="pkm1">
                     <option value="">Sélectionné votre Pokemon</option>
                     <option value="Métamorphe">Métamorphe</option>
                     <option value="Dracaufeu">Dracaufeu</option>
@@ -44,7 +45,7 @@
                 </select> <br>
                 <br>
                 </select> <br>
-                <select name="at">
+                <select name="pkm2">
                     <option value="">Sélectionné votre Pokemon</option>
                     <option value="Métamorphe">Métamorphe</option>
                     <option value="Dracaufeu">Dracaufeu</option>
@@ -56,11 +57,6 @@
                 <br>
                 <input type="submit" name="Envoyer" value="Valider">
             </form> -->
-            <?php
-            // if (isset($_GET['Envoyer'])) {
-            //     echo "vous avez selectionné" . ':  '.'<br>'. $_GET['choix'].'<br>'.' '.$_GET['ad'].'<br>'.' '.$_GET['at'];
-            // }
-            // ?>
     <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
     <main class="site-content-choose">
         <div class="container-ball">
