@@ -113,7 +113,8 @@ header .logo-pokemon{
     margin: 0;
 }
 
-.btn-trainer-name{
+.form-name-trainer .btn-trainer-name{
+    width: 40%;
     font-family:"pokemon-gb";
     font-size: 12px;
     padding: 10px 30px;
@@ -970,3 +971,10 @@ header .logo-pokemon{
     
     
   }
+
+
+@media (max-width: 500px){
+    .form-name-trainer .btn-trainer-name{
+        width: 60%;
+    }
+}
