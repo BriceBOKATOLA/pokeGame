@@ -50,7 +50,7 @@ function attack($currentAlly, $currentEnnemy) {
 }
 
 
-// Fonction qui récupère les images
+// Fonction qui récupère les images des pokémon
 
 function get_pokemon_image($pkmName, $pkmImgType){
     $json = file_get_contents("assets/data/pokeSpecs.json");
@@ -58,4 +58,22 @@ function get_pokemon_image($pkmName, $pkmImgType){
     $pokeSpecs_json = json_decode($json);
     $imgPkm = $pokeSpecs_json->{$pkmName}->{$pkmImgType};
     return $imgPkm;
+}
+
+// Fonction qui récupère le type du pokémon
+
+function get_pokemon_type($pkmName){
+    $json = file_get_contents("assets/data/pokeSpecs.json");
+
+    $pokeSpecs_json = json_decode($json);
+    $typePkm = $pokeSpecs_json->{$pkmName}->{'type'};
+    return $typePkm;
+}
+
+// Fonction qui créer un pokémon
+
+function set_pokemon($pkmType, $pkmName){
+    $pkm = new Otherpkm($pkmType, $pkmName, 100);
+
+    return $pkm;
 }

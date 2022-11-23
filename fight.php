@@ -7,26 +7,27 @@ require_once './function.php';
 // On démarre une session pour ensuite récupérer le nom du dresseur
 session_start();
 
+// Liste des pokémon choisie par le joueur
 $pkmPlayer = ['Dracaufeu', 'Tortank', 'Chenipan'];
 $pkmComputer = ['Florizarre', 'Métamorphe', 'Pikachu'];
 
 
 // Ally
-$ally = [
-    $pkmAlly1 = new Otherpkm("Feu", "Dracaufeu", 100),
-    $pkmAlly2 = new Otherpkm("Eau", "Tortank", 100),
-    $pkmAlly3 = new Otherpkm("Insecte", "Chenipan", 100)
-];
+$ally = [];
+// On créer l'équipe du joueur
+for ($i=0; $i < 3; $i++) { 
+    array_push($ally, set_pokemon(get_pokemon_type($pkmPlayer[$i]), $pkmPlayer[$i]));
+}
 
 // Ennemy
-$ennemy = [
-    $pkmEnnemy1 = new Otherpkm("Plante", "Florizarre", 100),
-    $pkmEnnemy2 = new Otherpkm("Normal", "Métamorphe", 100),
-    $pkmEnnemy3 = new Otherpkm("Electrique", "Pikachu", 100)
-];
+$ennemy = [];
+// On créer l'équipe de l'ordinateur
+for ($i=0; $i < 3; $i++) { 
+    array_push($ennemy, set_pokemon(get_pokemon_type($pkmComputer[$i]), $pkmComputer[$i]));
+}
 
 $allyNb = 0;
-$ennemyNb = 2;
+$ennemyNb = rand(0, 2);
 
 // appel de la fonction combat
 attack($ally[$allyNb], $ennemy[$ennemyNb]);
