@@ -60,10 +60,10 @@ attack($ally[$allyNb], $ennemy[$ennemyNb]);
     <main class="site-content">
         <div class="container-fight">
             <div class="pokemon-bottom pokemon">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png">
+                <img src="<?= get_pokemon_image($ally[$allyNb]->getName(), 'back_image')?>">
             </div>
             <div class="pokemon-top pokemon">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
+                <img src="<?= get_pokemon_image($ennemy[$ennemyNb]->getName(), 'front_image')?>">
             </div>
             <!-- Info pokémon ennemi -->
             <div class="card_pokemon_top">

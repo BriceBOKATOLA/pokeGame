@@ -48,3 +48,14 @@ function attack($currentAlly, $currentEnnemy) {
     }
     
 }
+
+
+// Fonction qui récupère les images
+
+function get_pokemon_image($pkmName, $pkmImgType){
+    $json = file_get_contents("assets/data/pokeSpecs.json");
+
+    $pokeSpecs_json = json_decode($json);
+    $imgPkm = $pokeSpecs_json->{$pkmName}->{$pkmImgType};
+    return $imgPkm;
+}
