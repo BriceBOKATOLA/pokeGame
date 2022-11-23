@@ -257,7 +257,7 @@ header .logo-pokemon{
     height: 15px;
     width: 100%;
   }
-  
+  /* vie du pokemon  */
   .progress-value {
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;

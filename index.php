@@ -70,13 +70,12 @@
     <script async src="./assets/js/script.js"></script>
 </head>
 <body>
-<h2 class="text-center mt-3">Pokemon</h2>
             <!-- select  -->
             <!-------------------------- selection  --------------------->
             <form action="index.php" method="GET">
                 <select name="choix">
                     <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Dito">Dito</option>
+                    <option value="Métamorphe">Métamorphe</option>
                     <option value="Dracaufeu">Dracaufeu</option>
                     <option value="Tortank">Tortank</option>
                     <option value="Florizarre">Florizarre</option>
@@ -86,7 +85,7 @@
                 <br>
                 <select name="ad">
                     <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Dito">Dito</option>
+                    <option value="Métamorphe">Métamorphe</option>
                     <option value="Dracaufeu">Dracaufeu</option>
                     <option value="Tortank">Tortank</option>
                     <option value="Florizarre">Florizarre</option>
@@ -97,7 +96,7 @@
                 </select> <br>
                 <select name="at">
                     <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Dito">Dito</option>
+                    <option value="Métamorphe">Métamorphe</option>
                     <option value="Dracaufeu">Dracaufeu</option>
                     <option value="Tortank">Tortank</option>
                     <option value="Florizarre">Florizarre</option>
