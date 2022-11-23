@@ -20,45 +20,12 @@
     <script async src="./assets/js/script.js"></script>
 </head>
 
-<body>
-                <!-- select  -->
-            <!-------------------------- selection  --------------------->
-            <form action="./controllers/choose_pokemon-controller.php" method="GET">
-                <select name="pkm1">
-                    <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Métamorphe">Métamorphe</option>
-                    <option value="Dracaufeu">Dracaufeu</option>
-                    <option value="Tortank">Tortank</option>
-                    <option value="Florizarre">Florizarre</option>
-                    <option value="Pikachu">Pikachu</option>
-                    <option value="Chenipan">Chenipan</option>
-                </select> <br>
-                <br>
-                <select name="pkm2">
-                    <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Métamorphe">Métamorphe</option>
-                    <option value="Dracaufeu">Dracaufeu</option>
-                    <option value="Tortank">Tortank</option>
-                    <option value="Florizarre">Florizarre</option>
-                    <option value="Pikachu">Pikachu</option>
-                    <option value="Chenipan">Chenipan</option>
-                </select> <br>
-                <br>
-                </select> <br>
-                <select name="pkm3">
-                    <option value="">Sélectionné votre Pokemon</option>
-                    <option value="Métamorphe">Métamorphe</option>
-                    <option value="Dracaufeu">Dracaufeu</option>
-                    <option value="Tortank">Tortank</option>
-                    <option value="Florizarre">Florizarre</option>
-                    <option value="Pikachu">Pikachu</option>
-                    <option value="Chenipan">Chenipan</option>
-                </select> <br>
-                <br>
-                <button type="submit">Valider</button>
-            </form>
+<body>      
+            
     <!---------------------------------------------------------------Contenu principal------------------------------------------------------------->
     <main class="site-content-choose">
+        <!-------------------------- selection  --------------------->
+        <form action="./controllers/choose_pokemon-controller.php" method="GET">
         <div class="container-ball">
             <div class="ball">
                 <button class="ball-button"><img class="ball-size" src="./assets/img/ball.png" alt="first-pokemon"></button>
@@ -77,6 +44,15 @@
                         <button class="type-button"> <img class="logo-type" src="./assets/img/feu.png"></button>
                     </div>
                     <div class="fire-pokemon">
+                    <select name="pkm1">
+                        <option value="">Sélectionne ton premier Pokemon</option>
+                        <option value="Métamorphe">Métamorphe</option>
+                        <option value="Dracaufeu">Dracaufeu</option>
+                        <option value="Tortank">Tortank</option>
+                        <option value="Florizarre">Florizarre</option>
+                        <option value="Pikachu">Pikachu</option>
+                        <option value="Chenipan">Chenipan</option>
+                    </select>
                         <p>Dracaufeu  <img src="./assets/img/6.png"></p>
                         <p>Simiabrase <img src="./assets/img/392.png"></p>
                         <p>Brazégalie <img src="./assets/img/257.png"></p>
@@ -89,6 +65,15 @@
                         <button class="type-button"> <img class="logo-type" src="./assets/img/feu.png"></button>
                     </div>
                     <div class="water-pokemon">
+                    <select name="pkm2">
+                        <option value="">Sélectionne ton deuxième Pokemon</option>
+                        <option value="Métamorphe">Métamorphe</option>
+                        <option value="Dracaufeu">Dracaufeu</option>
+                        <option value="Tortank">Tortank</option>
+                        <option value="Florizarre">Florizarre</option>
+                        <option value="Pikachu">Pikachu</option>
+                        <option value="Chenipan">Chenipan</option>
+                    </select>
                         <p>Tortank  <img src="./assets/img/9.png"></p>
                         <p>Pingoléon <img src="./assets/img/395.png"></p>
                         <p>Amphinobie <img src="./assets/img/658.png"></p>
@@ -101,6 +86,15 @@
                         <button class="type-button"> <img class="logo-type" src="./assets/img/feu.png"></button>
                     </div>
                     <div class="plant-pokemon">
+                    <select name="pkm3">
+                        <option value="">Sélectionne ton troisième Pokemon</option>
+                        <option value="Métamorphe">Métamorphe</option>
+                        <option value="Dracaufeu">Dracaufeu</option>
+                        <option value="Tortank">Tortank</option>
+                        <option value="Florizarre">Florizarre</option>
+                        <option value="Pikachu">Pikachu</option>
+                        <option value="Chenipan">Chenipan</option>
+                    </select>
                         <p>Florizarre  <img src="./assets/img/3.png"></p>
                         <p>Jungko <img src="./assets/img/254.png"></p>
                         <p>Torterra <img src="./assets/img/389.png"></p>
@@ -115,8 +109,9 @@
                 <div class="container-message">
                     <p>C'est l'heure de composer votre équipe !!</p>
                 </div>
-                <a href="./fight.php"><button class="btn-trainer-name">Suivant</button></a>
+                <button type="submit" class="btn-trainer-name">Suivant</button>
             </div>
+        </form>
 
         </div>
     </main>
