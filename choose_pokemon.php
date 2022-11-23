@@ -44,6 +44,7 @@
                         <button class="type-button"> <img class="logo-type" src="./assets/img/feu.png"></button>
                     </div>
                     <div class="fire-pokemon">
+                        <!-- select des pokemon  -->
                     <select name="pkm1">
                         <option value="">Sélectionne ton premier Pokemon</option>
                         <option value="Métamorphe">Métamorphe</option>
@@ -65,6 +66,7 @@
                         <button class="type-button"> <img class="logo-type" src="./assets/img/feu.png"></button>
                     </div>
                     <div class="water-pokemon">
+                        <!-- select des pokemon  -->
                     <select name="pkm2">
                         <option value="">Sélectionne ton deuxième Pokemon</option>
                         <option value="Métamorphe">Métamorphe</option>
@@ -86,6 +88,7 @@
                         <button class="type-button"> <img class="logo-type" src="./assets/img/feu.png"></button>
                     </div>
                     <div class="plant-pokemon">
+                        <!-- select des pokemons  -->
                     <select name="pkm3">
                         <option value="">Sélectionne ton troisième Pokemon</option>
                         <option value="Métamorphe">Métamorphe</option>
